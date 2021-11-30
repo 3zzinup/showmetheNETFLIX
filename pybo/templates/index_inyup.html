@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colrolib Templates">
+    <meta name="author" content="Colrolib">
+    <meta name="keywords" content="Colrolib Templates">
+
+    <!-- Title Page-->
+    <title>Show me the netflix</title>
+
+    <!-- Icons font CSS-->
+    <link href="../static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="../static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="../static/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-img-3 p-t-240 p-b-120">
+        <div class="wrapper wrapper--w900">
+            <div class="card card-6">
+                <div class="card-body">
+                    <form method="POST" action="/resultpage">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">감독</label>
+                                    <input class="input--style-1" type="text" name="director" placeholder="영어로..." required="required">
+                                </div>
+                                <div id="input_director">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">국가</label>
+                                    <input class="input--style-1" type="text" name="country" placeholder="예) South Korea...">
+                                </div>
+                                <div id="input_country">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">배급사</label>
+                                    <input class="input--style-1" type="text" name="company" placeholder="영어로...">
+                                </div>
+                                <div id="input_company">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">상영등급</label>
+                                    <input class="input--style-1" type="text" name="rating" placeholder="G, PG, PG-13, R, NC-17...">
+                                </div>
+                                <div id="input_rating">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">작가</label>
+                                    <input class="input--style-1" type="text" name="writer" placeholder="영어로...">
+                                </div>
+                                <div id="input_writer">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">장르</label>
+                                    <input class="input--style-1" type="text" name="genre" placeholder="예) horror...">
+                                </div>
+                                <div id="input_genre">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">평점</label>
+                                    <input class="input--style-1" type="text" name="score" placeholder="예) 8.1...">
+                                </div>
+                                <div id="input_score">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn-submit m-b-0" id="getHitRate" type="submit">흥행도 계산</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="../static/vendor/select2/select2.min.js"></script>
+    <script src="../static/vendor/jquery-validate/jquery.validate.min.js"></script>
+    <script src="../static/vendor/bootstrap-wizard/bootstrap.min.js"></script>
+    <script src="../static/vendor/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="../static/vendor/datepicker/moment.min.js"></script>
+    <script src="../static/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="../static/js/global.js"></script>
+    <script src="../static/js/input.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
