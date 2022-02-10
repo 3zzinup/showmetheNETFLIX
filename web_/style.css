@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.png);
+    background-size: cover;
+    font-family:sans-serif;
+}
+
+.box{
+    position: absolute;
+    top:50%;
+    Left:50%;
+    width: 500px;
+    transform: translate(-50%,-50%);
+}
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[type="text"]{
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius:25px 0 0 25px;
+}
+input[type="submit"]{
+    position: relative;
+    Left: 5px;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ff0707;
+    color: #fff;
+}
+input[type="submit"]:hover{
+    background: #ff5722;
+}
+
+h1{
+    font-size:3;
+    color:"#11dd11"; 
+    font-family:"맑은 고딕";
+    type:"text" ;
+    placeholder:"Type...";
+}
+
+form {
+    background-color:#007acc;
+    padding:30px 40px;
+    color:white;
+    text-align:center;
+  }
